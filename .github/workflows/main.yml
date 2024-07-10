@@ -15,3 +15,22 @@ jobs:
 
        - name: Say something
          run: echo "hello world"
+
+  hello-branches:
+     runs-on: ubuntu-latest
+
+     steps:
+       - name: Download your code
+         uses: actions/checkout@v2
+
+       - name: Verify branch
+         if: ${{ github.ref=='refs/heads/develop'}}
+         run: echo "Hello develop"
+
+
+       - name: Verify main develop
+         if: ${{ github.ref=='refs/heads/develop'}}
+        
+       
+ 
+
