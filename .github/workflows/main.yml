@@ -2,8 +2,7 @@ name: SayHello
 on:
   push:
     branches:
-      -main
-
+      - main
 jobs:
   welcome:
     runs-on: ubuntu-latest
