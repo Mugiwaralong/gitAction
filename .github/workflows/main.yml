@@ -5,6 +5,7 @@ on:
    branches:
      - develop
      - main
+     -release
     
 jobs:
   welcome:
@@ -38,3 +39,4 @@ jobs:
       steps:
        - name: Verify Pull Request 🔔
          if: github.event_name == 'pull_request'
+         run: echo "hello PR"
